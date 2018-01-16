@@ -3,7 +3,7 @@
 function Weather(cityName, description) {
     this.cityName = cityName;
     this.description = description;
-    this._temperature = ' ',
+    this._temperature = ' ';
 }
 
 Object.defineProperty(Weather.prototype, 'temperature', {
