@@ -17,7 +17,7 @@ function searchWeather() {
     http.open(method, url);
     http.onreadystatechange = function() {
         if(http.readyState == XMLHttpRequest.DONE && http.status === 200) {
-
+            var data = JSON.parse(http.responseText);
         } else if (http.readyState === XMLHttpRequest.DONE ) {
             alert("Something went wrong. Please try again");
         }
